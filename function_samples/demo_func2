@@ -1,0 +1,18 @@
+from helper import double
+from helper import triple
+
+x = 2
+
+def sixtimes(x):
+    return double(triple(x))
+
+def triple_with_output(x):
+    def triple(x):
+        return 3 * x
+    out = "Triple of " + str(x) + " is " + str(triple(x))
+    return out
+
+#print(double(10))
+print(triple(10))
+#print(sixtimes(10))
+print(triple_with_output(5))
